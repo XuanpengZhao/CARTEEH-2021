@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-07-06 16:03:47 by Eclipse SUMO netedit Version 1.12.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\xuanp\OneDrive%20-%20email.ucr.edu\Study\Cecert\CARTEEH\SUMO\sumo-main\CARTEEH\netrouGenerator\ChichagoAve\osm.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\xuanp\OneDrive%20-%20email.ucr.edu\Study\Cecert\CARTEEH\SUMO\sumo-main\CARTEEH\netrouGenerator\ChichagoAve\osm.net.xml"/>
+        <output.street-names value="true"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="C:\Users\xuanp\OneDrive%20-%20email.ucr.edu\Study\Cecert\CARTEEH\SUMO\sumo-main\CARTEEH\netrouGenerator\ChichagoAve\busStop1.add.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="bs_5" lane="626283217#0_1" startPos="62.60" endPos="72.60"/>
+</additional>
