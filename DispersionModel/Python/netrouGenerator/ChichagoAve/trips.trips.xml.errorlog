@@ -1,0 +1,6 @@
+Warning: At actuated tlLogic '54575333', linkIndex 5 has no controlling detector.
+Warning: At actuated tlLogic '54575333', linkIndex 6 has no controlling detector.
+Warning: At actuated tlLogic '54575333', linkIndex 7 has no controlling detector.
+Warning: At actuated tlLogic '54575333', linkIndex 8 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_5910933593_7805128109_9013582988_9013582989_9013582997', linkIndex 9 has no controlling detector.
+Warning: 9 total messages of type: At actuated tlLogic '%', linkIndex % has no controlling detector.
