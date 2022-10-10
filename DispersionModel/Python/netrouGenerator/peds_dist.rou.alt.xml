@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-07-07 02:54:41 by Eclipse SUMO duarouter Version 1.12.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="ChicagoAve.net.xml"/>
+        <additional-files value="ped.add.xml,busStop6.add.xml"/>
+        <route-files value="trips.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="peds_dist.rou.xml"/>
+        <alternatives-output value="peds_dist.rou.alt.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="adult" length="0.20" minGap="0.30" maxSpeed="1.30" vClass="pedestrian" width="0.50"/>
+    <person id="0" type="adult" depart="0.00">
+        <personTrip from="-7123182#2" to="475159103#0" arrivalPos="36.50" busStop="bs_6" walkFactor="0.75" costs="549.79"/>
+        <ride from="475159103#0" to="7328604#11" lines="taxi"/>
+    </person>
+    <person id="1" type="adult" depart="15.00">
+        <personTrip from="-7276324#3" to="626283153#0" arrivalPos="52.77" busStop="bs_2" walkFactor="0.75" costs="460.92"/>
+        <ride from="626283153#0" to="514518466#1" lines="taxi"/>
+    </person>
+    <person id="2" type="adult" depart="30.00">
+        <personTrip from="7098383#4" to="474688712#0" arrivalPos="4.71" busStop="bs_0" walkFactor="0.75" costs="502.20"/>
+        <ride from="474688712#0" to="7276260#8" lines="taxi"/>
+    </person>
+    <person id="3" type="adult" depart="45.00">
+        <personTrip from="-474688713#4" to="626283153#0" arrivalPos="36.40" busStop="bs_2" walkFactor="0.75" costs="139.34"/>
+        <ride from="626283153#0" to="7288838#0" lines="taxi"/>
+    </person>
+    <person id="4" type="adult" depart="60.00">
+        <personTrip from="7276260#0" to="626283153#0" arrivalPos="43.70" busStop="bs_2" walkFactor="0.75" costs="131.86"/>
+        <ride from="626283153#0" to="-125135491#1" lines="taxi"/>
+    </person>
+    <person id="5" type="adult" depart="75.00">
+        <personTrip from="7142812#1" to="474688711" arrivalPos="4.28" busStop="bs_7" walkFactor="0.75" costs="565.62"/>
+        <ride from="474688711" to="-7276260#8" lines="taxi"/>
+    </person>
+    <person id="6" type="adult" depart="90.00">
+        <personTrip from="80565710#2" to="474688712#0" arrivalPos="76.93" busStop="bs_0" walkFactor="0.75" costs="376.77"/>
+        <ride from="474688712#0" to="-474689216" lines="taxi"/>
+    </person>
+    <person id="7" type="adult" depart="105.00">
+        <personTrip from="626283158" to="626283153#0" arrivalPos="18.33" busStop="bs_2" walkFactor="0.75" costs="641.14"/>
+        <ride from="626283153#0" to="80565714#5" lines="taxi"/>
+    </person>
+    <person id="8" type="adult" depart="120.00">
+        <personTrip from="-7276260#4" to="474688712#0" arrivalPos="56.44" busStop="bs_0" walkFactor="0.75" costs="398.26"/>
+        <ride from="474688712#0" to="-80798172#4" lines="taxi"/>
+    </person>
+    <person id="9" type="adult" depart="135.00">
+        <personTrip from="-7276260#6" to="626283153#0" arrivalPos="55.19" busStop="bs_2" walkFactor="0.75" costs="517.18"/>
+        <ride from="626283153#0" to="125135491#8" lines="taxi"/>
+    </person>
+    <person id="10" type="adult" depart="150.00">
+        <personTrip from="-7276260#8" to="626284345#0" arrivalPos="1.08" busStop="bs_1" walkFactor="0.75" costs="754.45"/>
+        <ride from="626284345#0" to="-7276260#8" lines="taxi"/>
+    </person>
+    <person id="11" type="adult" depart="165.00">
+        <personTrip from="474688713#4" to="474688712#0" arrivalPos="69.66" busStop="bs_0" walkFactor="0.75" costs="88.33"/>
+        <ride from="474688712#0" to="-7328604#13" lines="taxi"/>
+    </person>
+    <person id="12" type="adult" depart="180.00">
+        <personTrip from="7288838#0" to="475159103#0" arrivalPos="19.09" busStop="bs_6" walkFactor="0.75" costs="632.72"/>
+        <ride from="475159103#0" to="626284345#0" lines="taxi"/>
+    </person>
+    <person id="13" type="adult" depart="195.00">
+        <personTrip from="-7198375#6" to="474688711" arrivalPos="44.39" busStop="bs_7" walkFactor="0.75" costs="400.58"/>
+        <ride from="474688711" to="973970332#0" lines="taxi"/>
+    </person>
+    <person id="14" type="adult" depart="210.00">
+        <personTrip from="-7123182#13" to="475159103#0" arrivalPos="23.19" busStop="bs_6" walkFactor="0.75" costs="316.20"/>
+        <ride from="475159103#0" to="-80565710#13" lines="taxi"/>
+    </person>
+    <person id="15" type="adult" depart="225.00">
+        <personTrip from="7142807#0" to="626283153#0" arrivalPos="19.59" busStop="bs_2" walkFactor="0.75" costs="860.82"/>
+        <ride from="626283153#0" to="80565714#5" lines="taxi"/>
+    </person>
+    <person id="16" type="adult" depart="240.00">
+        <personTrip from="7281814#0" to="626284345#0" arrivalPos="10.81" busStop="bs_1" walkFactor="0.75" costs="783.00"/>
+        <ride from="626284345#0" to="7102287#0" lines="taxi"/>
+    </person>
+    <person id="17" type="adult" depart="255.00">
+        <personTrip from="626799488#0" to="474688711" arrivalPos="85.97" busStop="bs_7" walkFactor="0.75" costs="649.28"/>
+        <ride from="474688711" to="80565462#8" lines="taxi"/>
+    </person>
+    <person id="18" type="adult" depart="270.00">
+        <personTrip from="626091626#0" to="474688712#0" arrivalPos="33.33" busStop="bs_0" walkFactor="0.75" costs="524.88"/>
+        <ride from="474688712#0" to="626799488#0" lines="taxi"/>
+    </person>
+    <person id="19" type="adult" depart="285.00">
+        <personTrip from="-7276317#7" to="626283153#0" arrivalPos="50.63" busStop="bs_2" walkFactor="0.75" costs="569.25"/>
+        <ride from="626283153#0" to="7276317#0" lines="taxi"/>
+    </person>
+    <person id="20" type="adult" depart="300.00">
+        <personTrip from="-7142812#4" to="475159103#0" arrivalPos="1.89" busStop="bs_6" walkFactor="0.75" costs="850.93"/>
+        <ride from="475159103#0" to="626283217#0" lines="taxi"/>
+    </person>
+    <person id="21" type="adult" depart="315.00">
+        <personTrip from="7123182#0" to="626283153#0" arrivalPos="38.00" busStop="bs_2" walkFactor="0.75" costs="704.13"/>
+        <ride from="626283153#0" to="-80565714#9" lines="taxi"/>
+    </person>
+    <person id="22" type="adult" depart="330.00">
+        <personTrip from="626093615#2" to="626283153#0" arrivalPos="22.74" busStop="bs_2" walkFactor="0.75" costs="183.88"/>
+        <ride from="626283153#0" to="7276260#5" lines="taxi"/>
+    </person>
+    <person id="23" type="adult" depart="345.00">
+        <personTrip from="-80798171#2" to="474688712#0" arrivalPos="65.57" busStop="bs_0" walkFactor="0.75" costs="398.26"/>
+        <ride from="474688712#0" to="475159104#0" lines="taxi"/>
+    </person>
+    <person id="24" type="adult" depart="360.00">
+        <personTrip from="-514518467#1" to="474688711" arrivalPos="92.20" busStop="bs_7" walkFactor="0.75" costs="695.55"/>
+        <ride from="474688711" to="7127213#0" lines="taxi"/>
+    </person>
+    <person id="25" type="adult" depart="375.00">
+        <personTrip from="626800306#0" to="474688712#0" arrivalPos="85.32" busStop="bs_0" walkFactor="0.75" costs="718.00"/>
+        <ride from="474688712#0" to="-80798171#2" lines="taxi"/>
+    </person>
+    <person id="26" type="adult" depart="390.00">
+        <personTrip from="626091619#0" to="475159103#0" arrivalPos="36.36" busStop="bs_6" walkFactor="0.75" costs="583.19"/>
+        <ride from="475159103#0" to="80798172#4" lines="taxi"/>
+    </person>
+    <person id="27" type="adult" depart="405.00">
+        <personTrip from="626283155#2" to="626284345#0" arrivalPos="71.13" busStop="bs_1" walkFactor="0.75" costs="356.10"/>
+        <ride from="626284345#0" to="7328604#3" lines="taxi"/>
+    </person>
+    <person id="28" type="adult" depart="420.00">
+        <personTrip from="626282455#0" to="475159102#1" arrivalPos="49.06" busStop="bs_3" walkFactor="0.75" costs="36.93"/>
+        <ride from="475159102#1" to="80798171#11" lines="taxi"/>
+    </person>
+    <person id="29" type="adult" depart="435.00">
+        <personTrip from="474688713#4" to="626283153#0" arrivalPos="17.53" busStop="bs_2" walkFactor="0.75" costs="214.93"/>
+        <ride from="626283153#0" to="-7281814#2" lines="taxi"/>
+    </person>
+    <person id="30" type="adult" depart="450.00">
+        <personTrip from="80798171#3" to="475159103#0" arrivalPos="1.33" busStop="bs_6" walkFactor="0.75" costs="485.82"/>
+        <ride from="475159103#0" to="-125135491#4" lines="taxi"/>
+    </person>
+    <person id="31" type="adult" depart="465.00">
+        <personTrip from="7281810#0" to="475159103#0" arrivalPos="12.36" busStop="bs_6" walkFactor="0.75" costs="632.72"/>
+        <ride from="475159103#0" to="80565710#0" lines="taxi"/>
+    </person>
+    <person id="32" type="adult" depart="480.00">
+        <personTrip from="7276324#0" to="475159102#1" arrivalPos="68.91" busStop="bs_3" walkFactor="0.75" costs="661.25"/>
+        <ride from="475159102#1" to="626283151#0" lines="taxi"/>
+    </person>
+    <person id="33" type="adult" depart="495.00">
+        <personTrip from="125135481#0" to="474688711" arrivalPos="15.62" busStop="bs_7" walkFactor="0.75" costs="332.49"/>
+        <ride from="474688711" to="-626799488#6" lines="taxi"/>
+    </person>
+    <person id="34" type="adult" depart="510.00">
+        <personTrip from="626288019" to="626283153#0" arrivalPos="70.85" busStop="bs_2" walkFactor="0.75" costs="602.42"/>
+        <ride from="626283153#0" to="-7247663#1" lines="taxi"/>
+    </person>
+    <person id="35" type="adult" depart="525.00">
+        <personTrip from="475159104#0" to="626284345#0" arrivalPos="5.35" busStop="bs_1" walkFactor="0.75" costs="135.56"/>
+        <ride from="626284345#0" to="-80565714#12" lines="taxi"/>
+    </person>
+    <person id="36" type="adult" depart="540.00">
+        <personTrip from="626283155#0" to="626283217#0" arrivalPos="73.39" busStop="bs_5" walkFactor="0.75" costs="741.43"/>
+        <ride from="626283217#0" to="7078477#0" lines="taxi"/>
+    </person>
+    <person id="37" type="adult" depart="555.00">
+        <personTrip from="474688713#4" to="626284345#0" arrivalPos="59.42" busStop="bs_1" walkFactor="0.75" costs="201.39"/>
+        <ride from="626284345#0" to="-474688713#4" lines="taxi"/>
+    </person>
+    <person id="38" type="adult" depart="570.00">
+        <personTrip from="-7142812#6" to="474688711" arrivalPos="12.70" busStop="bs_7" walkFactor="0.75" costs="932.10"/>
+        <ride from="474688711" to="626799488#0" lines="taxi"/>
+    </person>
+    <person id="39" type="adult" depart="585.00">
+        <personTrip from="7276317#0" to="474688711" arrivalPos="12.31" busStop="bs_7" walkFactor="0.75" costs="268.49"/>
+        <ride from="474688711" to="7276317#0" lines="taxi"/>
+    </person>
+    <person id="40" type="adult" depart="600.00">
+        <personTrip from="-7276324#3" to="475159103#0" arrivalPos="16.85" busStop="bs_6" walkFactor="0.75" costs="463.81"/>
+        <ride from="475159103#0" to="7328604#0" lines="taxi"/>
+    </person>
+    <person id="41" type="adult" depart="615.00">
+        <personTrip from="-7098383#1" to="474688712#0" arrivalPos="99.84" busStop="bs_0" walkFactor="0.75" costs="587.21"/>
+        <ride from="474688712#0" to="-474688705#1" lines="taxi"/>
+    </person>
+    <person id="42" type="adult" depart="630.00">
+        <personTrip from="7247663#0" to="474688712#0" arrivalPos="27.33" busStop="bs_0" walkFactor="0.75" costs="643.66"/>
+        <ride from="474688712#0" to="-7276317#7" lines="taxi"/>
+    </person>
+    <person id="43" type="adult" depart="645.00">
+        <personTrip from="7078477#0" to="474688712#0" arrivalPos="23.10" busStop="bs_0" walkFactor="0.75" costs="777.62"/>
+        <ride from="474688712#0" to="-80565710#3" lines="taxi"/>
+    </person>
+    <person id="44" type="adult" depart="660.00">
+        <personTrip from="-7142807#5" to="474688712#0" arrivalPos="17.38" busStop="bs_0" walkFactor="0.75" costs="556.60"/>
+        <ride from="474688712#0" to="626283151#1" lines="taxi"/>
+    </person>
+    <person id="45" type="adult" depart="675.00">
+        <personTrip from="-7281814#2" to="626283153#0" arrivalPos="42.34" busStop="bs_2" walkFactor="0.75" costs="951.22"/>
+        <ride from="626283153#0" to="7142807#0" lines="taxi"/>
+    </person>
+    <person id="46" type="adult" depart="690.00">
+        <personTrip from="-80565462#4" to="474688712#0" arrivalPos="24.99" busStop="bs_0" walkFactor="0.75" costs="819.96"/>
+        <ride from="474688712#0" to="475159096#0" lines="taxi"/>
+    </person>
+    <person id="47" type="adult" depart="705.00">
+        <personTrip from="-80798171#10" to="626284345#0" arrivalPos="145.58" busStop="bs_1" walkFactor="0.75" costs="484.62"/>
+        <ride from="626284345#0" to="-80798172#4" lines="taxi"/>
+    </person>
+    <person id="48" type="adult" depart="720.00">
+        <personTrip from="-7098388#2" to="626283153#0" arrivalPos="6.59" busStop="bs_2" walkFactor="0.75" costs="736.75"/>
+        <ride from="626283153#0" to="80565710#14" lines="taxi"/>
+    </person>
+    <person id="49" type="adult" depart="735.00">
+        <personTrip from="-7276260#2" to="474688711" arrivalPos="65.60" busStop="bs_7" walkFactor="0.75" costs="232.77"/>
+        <ride from="474688711" to="626800306#0" lines="taxi"/>
+    </person>
+    <person id="50" type="adult" depart="750.00">
+        <personTrip from="-474688713#1" to="474688712#0" arrivalPos="74.07" busStop="bs_0" walkFactor="0.75" costs="201.58"/>
+        <ride from="474688712#0" to="-474688706" lines="taxi"/>
+    </person>
+    <person id="51" type="adult" depart="765.00">
+        <personTrip from="7142807#4" to="475159103#0" arrivalPos="24.42" busStop="bs_6" walkFactor="0.75" costs="663.01"/>
+        <ride from="475159103#0" to="-7142807#5" lines="taxi"/>
+    </person>
+    <person id="52" type="adult" depart="780.00">
+        <personTrip from="7123182#0" to="626284345#0" arrivalPos="124.04" busStop="bs_1" walkFactor="0.75" costs="704.39"/>
+        <ride from="626284345#0" to="626283158" lines="taxi"/>
+    </person>
+    <person id="53" type="adult" depart="795.00">
+        <personTrip from="80798172#2" to="626283153#0" arrivalPos="69.26" busStop="bs_2" walkFactor="0.75" costs="623.35"/>
+        <ride from="626283153#0" to="7276317#0" lines="taxi"/>
+    </person>
+    <person id="54" type="adult" depart="810.00">
+        <personTrip from="-7276260#7" to="626283153#0" arrivalPos="71.10" busStop="bs_2" walkFactor="0.75" costs="604.15"/>
+        <ride from="626283153#0" to="7098383#4" lines="taxi"/>
+    </person>
+    <person id="55" type="adult" depart="825.00">
+        <personTrip from="626288022" to="475159103#0" arrivalPos="12.61" busStop="bs_6" walkFactor="0.75" costs="506.24"/>
+        <ride from="475159103#0" to="-80565462#4" lines="taxi"/>
+    </person>
+    <person id="56" type="adult" depart="840.00">
+        <personTrip from="-626799488#6" to="474688711" arrivalPos="48.37" busStop="bs_7" walkFactor="0.75" costs="885.21"/>
+        <ride from="474688711" to="-7328604#2" lines="taxi"/>
+    </person>
+    <person id="57" type="adult" depart="855.00">
+        <personTrip from="80565462#2" to="474688711" arrivalPos="56.96" busStop="bs_7" walkFactor="0.75" costs="1038.60"/>
+        <ride from="474688711" to="-7328604#5" lines="taxi"/>
+    </person>
+    <person id="58" type="adult" depart="870.00">
+        <personTrip from="-7328604#7" to="475159103#0" arrivalPos="6.90" busStop="bs_6" walkFactor="0.75" costs="796.91"/>
+        <ride from="475159103#0" to="80565714#5" lines="taxi"/>
+    </person>
+    <person id="59" type="adult" depart="885.00">
+        <personTrip from="-80798172#3" to="474688712#0" arrivalPos="98.84" busStop="bs_0" walkFactor="0.75" costs="692.36"/>
+        <ride from="474688712#0" to="-7276324#3" lines="taxi"/>
+    </person>
+    <person id="60" type="adult" depart="900.00">
+        <personTrip from="80565462#5" to="474688711" arrivalPos="18.00" busStop="bs_7" walkFactor="0.75" costs="813.51"/>
+        <ride from="474688711" to="-474689218#8" lines="taxi"/>
+    </person>
+    <person id="61" type="adult" depart="915.00">
+        <personTrip from="80798171#7" to="474688712#0" arrivalPos="66.42" busStop="bs_0" walkFactor="0.75" costs="421.31"/>
+        <ride from="474688712#0" to="626288020#0" lines="taxi"/>
+    </person>
+    <person id="62" type="adult" depart="930.00">
+        <personTrip from="7328604#9" to="475159103#0" arrivalPos="6.22" busStop="bs_6" walkFactor="0.75" costs="796.22"/>
+        <ride from="475159103#0" to="80798172#2" lines="taxi"/>
+    </person>
+    <person id="63" type="adult" depart="945.00">
+        <personTrip from="626093615#2" to="626284345#0" arrivalPos="4.99" busStop="bs_1" walkFactor="0.75" costs="138.19"/>
+        <ride from="626284345#0" to="-80565714#9" lines="taxi"/>
+    </person>
+    <person id="64" type="adult" depart="960.00">
+        <personTrip from="-7276260#2" to="626283153#0" arrivalPos="20.65" busStop="bs_2" walkFactor="0.75" costs="334.51"/>
+        <ride from="626283153#0" to="7102287#0" lines="taxi"/>
+    </person>
+    <person id="65" type="adult" depart="975.00">
+        <personTrip from="-7237382#1" to="475159103#0" arrivalPos="22.40" busStop="bs_6" walkFactor="0.75" costs="449.89"/>
+        <ride from="475159103#0" to="-7098388#2" lines="taxi"/>
+    </person>
+    <person id="66" type="adult" depart="990.00">
+        <personTrip from="-7328604#2" to="626284345#0" arrivalPos="166.46" busStop="bs_1" walkFactor="0.75" costs="608.94"/>
+        <ride from="626284345#0" to="626091617#1" lines="taxi"/>
+    </person>
+    <person id="67" type="adult" depart="1005.00">
+        <personTrip from="80565462#2" to="474688712#0" arrivalPos="6.93" busStop="bs_0" walkFactor="0.75" costs="1013.74"/>
+        <ride from="474688712#0" to="80565710#14" lines="taxi"/>
+    </person>
+    <person id="68" type="adult" depart="1020.00">
+        <personTrip from="-7247663#1" to="474688711" arrivalPos="17.57" busStop="bs_7" walkFactor="0.75" costs="497.54"/>
+        <ride from="474688711" to="-80565710#1" lines="taxi"/>
+    </person>
+    <person id="69" type="adult" depart="1035.00">
+        <personTrip from="7276260#7" to="626284345#0" arrivalPos="177.96" busStop="bs_1" walkFactor="0.75" costs="376.56"/>
+        <ride from="626284345#0" to="-80565710#18" lines="taxi"/>
+    </person>
+    <person id="70" type="adult" depart="1050.00">
+        <personTrip from="7123182#0" to="474688711" arrivalPos="30.82" busStop="bs_7" walkFactor="0.75" costs="634.69"/>
+        <ride from="474688711" to="7288838#0" lines="taxi"/>
+    </person>
+    <person id="71" type="adult" depart="1065.00">
+        <personTrip from="-80565710#3" to="475159103#0" arrivalPos="13.89" busStop="bs_6" walkFactor="0.75" costs="601.95"/>
+        <ride from="475159103#0" to="80565462#8" lines="taxi"/>
+    </person>
+    <person id="72" type="adult" depart="1080.00">
+        <personTrip from="475159104#0" to="626284345#0" arrivalPos="15.43" busStop="bs_1" walkFactor="0.75" costs="145.90"/>
+        <ride from="626284345#0" to="973970332#0" lines="taxi"/>
+    </person>
+    <person id="73" type="adult" depart="1095.00">
+        <personTrip from="7142812#1" to="474688712#0" arrivalPos="58.71" busStop="bs_0" walkFactor="0.75" costs="574.90"/>
+        <ride from="474688712#0" to="-7098383#1" lines="taxi"/>
+    </person>
+    <person id="74" type="adult" depart="1110.00">
+        <personTrip from="80565710#4" to="475159103#0" arrivalPos="8.49" busStop="bs_6" walkFactor="0.75" costs="604.85"/>
+        <ride from="475159103#0" to="-7276260#4" lines="taxi"/>
+    </person>
+    <person id="75" type="adult" depart="1125.00">
+        <personTrip from="626800306#0" to="626284345#0" arrivalPos="32.40" busStop="bs_1" walkFactor="0.75" costs="669.98"/>
+        <ride from="626284345#0" to="7328604#0" lines="taxi"/>
+    </person>
+    <person id="76" type="adult" depart="1140.00">
+        <personTrip from="-80565710#18" to="474688711" arrivalPos="4.60" busStop="bs_7" walkFactor="0.75" costs="993.54"/>
+        <ride from="474688711" to="-7328604#14" lines="taxi"/>
+    </person>
+    <person id="77" type="adult" depart="1155.00">
+        <personTrip from="626800306#0" to="474688711" arrivalPos="7.86" busStop="bs_7" walkFactor="0.75" costs="687.68"/>
+        <ride from="474688711" to="80798171#11" lines="taxi"/>
+    </person>
+    <person id="78" type="adult" depart="1170.00">
+        <personTrip from="-7123182#2" to="474688712#0" arrivalPos="74.72" busStop="bs_0" walkFactor="0.75" costs="526.21"/>
+        <ride from="474688712#0" to="626283217#0" lines="taxi"/>
+    </person>
+    <person id="79" type="adult" depart="1185.00">
+        <personTrip from="-475159105#4" to="474688711" arrivalPos="34.55" busStop="bs_7" walkFactor="0.75" costs="332.49"/>
+        <ride from="474688711" to="-7090087#1" lines="taxi"/>
+    </person>
+    <person id="80" type="adult" depart="1200.00">
+        <personTrip from="7276260#8" to="626284345#0" arrivalPos="52.02" busStop="bs_1" walkFactor="0.75" costs="592.70"/>
+        <ride from="626284345#0" to="7281814#0" lines="taxi"/>
+    </person>
+    <person id="81" type="adult" depart="1215.00">
+        <personTrip from="704059224" to="626283153#0" arrivalPos="15.73" busStop="bs_2" walkFactor="0.75" costs="183.88"/>
+        <ride from="626283153#0" to="7276260#7" lines="taxi"/>
+    </person>
+    <person id="82" type="adult" depart="1230.00">
+        <personTrip from="626288020#0" to="474688712#0" arrivalPos="70.25" busStop="bs_0" walkFactor="0.75" costs="425.24"/>
+        <ride from="474688712#0" to="-7276260#7" lines="taxi"/>
+    </person>
+    <person id="83" type="adult" depart="1245.00">
+        <personTrip from="-7281814#2" to="475159102#1" arrivalPos="38.15" busStop="bs_3" walkFactor="0.75" costs="1030.05"/>
+        <ride from="475159102#1" to="80565710#11" lines="taxi"/>
+    </person>
+    <person id="84" type="adult" depart="1260.00">
+        <personTrip from="80565714#10" to="626284345#0" arrivalPos="110.32" busStop="bs_1" walkFactor="0.75" costs="493.02"/>
+        <ride from="626284345#0" to="474688713#4" lines="taxi"/>
+    </person>
+    <person id="85" type="adult" depart="1275.00">
+        <personTrip from="7276260#8" to="474688712#0" arrivalPos="40.34" busStop="bs_0" walkFactor="0.75" costs="606.15"/>
+        <ride from="474688712#0" to="7281814#0" lines="taxi"/>
+    </person>
+    <person id="86" type="adult" depart="1290.00">
+        <personTrip from="7102287#0" to="474688712#0" arrivalPos="53.08" busStop="bs_0" walkFactor="0.75" costs="376.77"/>
+        <ride from="474688712#0" to="-7098383#7" lines="taxi"/>
+    </person>
+    <person id="87" type="adult" depart="1305.00">
+        <personTrip from="80565462#8" to="626284345#0" arrivalPos="148.06" busStop="bs_1" walkFactor="0.75" costs="639.86"/>
+        <ride from="626284345#0" to="-475159105#4" lines="taxi"/>
+    </person>
+    <person id="88" type="adult" depart="1320.00">
+        <personTrip from="973970332#0" to="474688712#0" arrivalPos="60.56" busStop="bs_0" walkFactor="0.75" costs="999.44"/>
+        <ride from="474688712#0" to="-80798172#4" lines="taxi"/>
+    </person>
+    <person id="89" type="adult" depart="1335.00">
+        <personTrip from="-7142812#4" to="475159103#0" arrivalPos="17.09" busStop="bs_6" walkFactor="0.75" costs="844.74"/>
+        <ride from="475159103#0" to="-7276317#7" lines="taxi"/>
+    </person>
+    <person id="90" type="adult" depart="1350.00">
+        <personTrip from="-7098388#2" to="626283153#0" arrivalPos="27.05" busStop="bs_2" walkFactor="0.75" costs="755.15"/>
+        <ride from="626283153#0" to="80565710#4" lines="taxi"/>
+    </person>
+    <person id="91" type="adult" depart="1365.00">
+        <personTrip from="80798172#0" to="626284345#0" arrivalPos="175.19" busStop="bs_1" walkFactor="0.75" costs="381.64"/>
+        <ride from="626284345#0" to="80565710#4" lines="taxi"/>
+    </person>
+    <person id="92" type="adult" depart="1380.00">
+        <personTrip from="-7276324#3" to="474688712#0" arrivalPos="2.47" busStop="bs_0" walkFactor="0.75" costs="441.61"/>
+        <ride from="474688712#0" to="475159101" lines="taxi"/>
+    </person>
+    <person id="93" type="adult" depart="1395.00">
+        <personTrip from="7098388#0" to="474688712#0" arrivalPos="31.34" busStop="bs_0" walkFactor="0.75" costs="461.19"/>
+        <ride from="474688712#0" to="-475159105#4" lines="taxi"/>
+    </person>
+    <person id="94" type="adult" depart="1410.00">
+        <personTrip from="80798172#4" to="-474689217" arrivalPos="3.14" busStop="bs_4" walkFactor="0.75" costs="1026.11"/>
+        <ride from="-474689217" to="-7328604#2" lines="taxi"/>
+    </person>
+    <person id="95" type="adult" depart="1425.00">
+        <personTrip from="474688712#0" to="474688712#0" arrivalPos="90.63" busStop="bs_0" walkFactor="0.75" costs="81.25"/>
+        <ride from="474688712#0" to="-7328604#7" lines="taxi"/>
+    </person>
+    <person id="96" type="adult" depart="1440.00">
+        <personTrip from="80565710#7" to="474688711" arrivalPos="61.39" busStop="bs_7" walkFactor="0.75" costs="668.53"/>
+        <ride from="474688711" to="80798172#0" lines="taxi"/>
+    </person>
+    <person id="97" type="adult" depart="1455.00">
+        <personTrip from="-7098388#2" to="626283217#0" arrivalPos="99.09" busStop="bs_5" walkFactor="0.75" costs="1023.80"/>
+        <ride from="626283217#0" to="-7276260#4" lines="taxi"/>
+    </person>
+    <person id="98" type="adult" depart="1470.00">
+        <personTrip from="80798172#4" to="475159103#0" arrivalPos="20.18" busStop="bs_6" walkFactor="0.75" costs="773.70"/>
+        <ride from="475159103#0" to="626283158" lines="taxi"/>
+    </person>
+    <person id="99" type="adult" depart="1485.00">
+        <personTrip from="7098388#0" to="626283153#0" arrivalPos="31.49" busStop="bs_2" walkFactor="0.75" costs="387.14"/>
+        <ride from="626283153#0" to="-7281810#1" lines="taxi"/>
+    </person>
+    <person id="100" type="adult" depart="1500.00">
+        <personTrip from="-7328604#5" to="474688712#0" arrivalPos="73.57" busStop="bs_0" walkFactor="0.75" costs="797.19"/>
+        <ride from="474688712#0" to="-7276317#7" lines="taxi"/>
+    </person>
+    <person id="101" type="adult" depart="1515.00">
+        <personTrip from="-7288838#1" to="626283153#0" arrivalPos="33.76" busStop="bs_2" walkFactor="0.75" costs="613.03"/>
+        <ride from="626283153#0" to="80798172#4" lines="taxi"/>
+    </person>
+    <person id="102" type="adult" depart="1530.00">
+        <personTrip from="7098388#0" to="474688711" arrivalPos="85.80" busStop="bs_7" walkFactor="0.75" costs="441.75"/>
+        <ride from="474688711" to="7098383#2" lines="taxi"/>
+    </person>
+    <person id="103" type="adult" depart="1545.00">
+        <personTrip from="-80798171#12" to="626284345#0" arrivalPos="102.88" busStop="bs_1" walkFactor="0.75" costs="616.21"/>
+        <ride from="626284345#0" to="-7328604#5" lines="taxi"/>
+    </person>
+    <person id="104" type="adult" depart="1560.00">
+        <personTrip from="-80565462#3" to="474688711" arrivalPos="95.39" busStop="bs_7" walkFactor="0.75" costs="895.56"/>
+        <ride from="474688711" to="7328604#11" lines="taxi"/>
+    </person>
+    <person id="105" type="adult" depart="1575.00">
+        <personTrip from="-7328604#5" to="626283153#0" arrivalPos="21.95" busStop="bs_2" walkFactor="0.75" costs="677.18"/>
+        <ride from="626283153#0" to="-80565710#13" lines="taxi"/>
+    </person>
+    <person id="106" type="adult" depart="1590.00">
+        <personTrip from="626288024#0" to="626284345#0" arrivalPos="73.73" busStop="bs_1" walkFactor="0.75" costs="439.07"/>
+        <ride from="626284345#0" to="626800306#0" lines="taxi"/>
+    </person>
+    <person id="107" type="adult" depart="1605.00">
+        <personTrip from="-474688713#1" to="474688712#0" arrivalPos="35.49" busStop="bs_0" walkFactor="0.75" costs="201.58"/>
+        <ride from="474688712#0" to="-7276317#7" lines="taxi"/>
+    </person>
+    <person id="108" type="adult" depart="1620.00">
+        <personTrip from="626283217#0" to="474688712#0" arrivalPos="72.40" busStop="bs_0" walkFactor="0.75" costs="231.67"/>
+        <ride from="474688712#0" to="-7078477#1" lines="taxi"/>
+    </person>
+    <person id="109" type="adult" depart="1635.00">
+        <personTrip from="7090087#0" to="475159103#0" arrivalPos="4.16" busStop="bs_6" walkFactor="0.75" costs="772.29"/>
+        <ride from="475159103#0" to="-7328604#13" lines="taxi"/>
+    </person>
+    <person id="110" type="adult" depart="1650.00">
+        <personTrip from="475159105#1" to="474688712#0" arrivalPos="48.27" busStop="bs_0" walkFactor="0.75" costs="429.56"/>
+        <ride from="474688712#0" to="7328604#3" lines="taxi"/>
+    </person>
+    <person id="111" type="adult" depart="1665.00">
+        <personTrip from="626091617#1" to="474688712#0" arrivalPos="68.50" busStop="bs_0" walkFactor="0.75" costs="707.01"/>
+        <ride from="474688712#0" to="7276267#0" lines="taxi"/>
+    </person>
+    <person id="112" type="adult" depart="1680.00">
+        <personTrip from="80798171#10" to="475159103#0" arrivalPos="31.99" busStop="bs_6" walkFactor="0.75" costs="556.34"/>
+        <ride from="475159103#0" to="-7142812#4" lines="taxi"/>
+    </person>
+    <person id="113" type="adult" depart="1695.00">
+        <personTrip from="973970332#0" to="626284345#0" arrivalPos="50.43" busStop="bs_1" walkFactor="0.75" costs="1060.66"/>
+        <ride from="626284345#0" to="7281810#0" lines="taxi"/>
+    </person>
+    <person id="114" type="adult" depart="1710.00">
+        <personTrip from="-7098388#2" to="474688711" arrivalPos="69.93" busStop="bs_7" walkFactor="0.75" costs="826.04"/>
+        <ride from="474688711" to="626282455#0" lines="taxi"/>
+    </person>
+    <person id="115" type="adult" depart="1725.00">
+        <personTrip from="-7328604#14" to="474688712#0" arrivalPos="12.87" busStop="bs_0" walkFactor="0.75" costs="1095.39"/>
+        <ride from="474688712#0" to="80565710#11" lines="taxi"/>
+    </person>
+    <person id="116" type="adult" depart="1740.00">
+        <personTrip from="80565710#4" to="626284345#0" arrivalPos="127.93" busStop="bs_1" walkFactor="0.75" costs="611.45"/>
+        <ride from="626284345#0" to="-474689217" lines="taxi"/>
+    </person>
+    <person id="117" type="adult" depart="1755.00">
+        <personTrip from="80565710#2" to="474688711" arrivalPos="13.86" busStop="bs_7" walkFactor="0.75" costs="366.07"/>
+        <ride from="474688711" to="7276317#0" lines="taxi"/>
+    </person>
+    <person id="118" type="adult" depart="1770.00">
+        <personTrip from="7328604#0" to="475159103#0" arrivalPos="36.13" busStop="bs_6" walkFactor="0.75" costs="349.39"/>
+        <ride from="475159103#0" to="7237382#0" lines="taxi"/>
+    </person>
+    <person id="119" type="adult" depart="1785.00">
+        <personTrip from="-7142812#6" to="474688712#0" arrivalPos="38.47" busStop="bs_0" walkFactor="0.75" costs="920.62"/>
+        <ride from="474688712#0" to="125135491#5" lines="taxi"/>
+    </person>
+    <person id="120" type="adult" depart="1800.00">
+        <personTrip from="7142807#2" to="626284345#0" arrivalPos="86.09" busStop="bs_1" walkFactor="0.75" costs="664.09"/>
+        <ride from="626284345#0" to="7098388#0" lines="taxi"/>
+    </person>
+    <person id="121" type="adult" depart="1815.00">
+        <personTrip from="-7078477#1" to="475159103#0" arrivalPos="1.74" busStop="bs_6" walkFactor="0.75" costs="591.99"/>
+        <ride from="475159103#0" to="80798171#7" lines="taxi"/>
+    </person>
+    <person id="122" type="adult" depart="1830.00">
+        <personTrip from="626283217#0" to="474688711" arrivalPos="38.36" busStop="bs_7" walkFactor="0.75" costs="208.34"/>
+        <ride from="474688711" to="626283158" lines="taxi"/>
+    </person>
+    <person id="123" type="adult" depart="1845.00">
+        <personTrip from="474688713#2" to="626284345#0" arrivalPos="121.12" busStop="bs_1" walkFactor="0.75" costs="314.64"/>
+        <ride from="626284345#0" to="-80798171#5" lines="taxi"/>
+    </person>
+    <person id="124" type="adult" depart="1860.00">
+        <personTrip from="-7276324#3" to="475159103#0" arrivalPos="40.07" busStop="bs_6" walkFactor="0.75" costs="439.99"/>
+        <ride from="475159103#0" to="-474688713#3" lines="taxi"/>
+    </person>
+    <person id="125" type="adult" depart="1875.00">
+        <personTrip from="-80798172#4" to="474688712#0" arrivalPos="87.52" busStop="bs_0" walkFactor="0.75" costs="862.19"/>
+        <ride from="474688712#0" to="626288020#0" lines="taxi"/>
+    </person>
+    <person id="126" type="adult" depart="1890.00">
+        <personTrip from="-80565710#7" to="474688712#0" arrivalPos="15.90" busStop="bs_0" walkFactor="0.75" costs="688.71"/>
+        <ride from="474688712#0" to="-7123182#6" lines="taxi"/>
+    </person>
+    <person id="127" type="adult" depart="1905.00">
+        <personTrip from="-7281810#1" to="626283153#0" arrivalPos="66.99" busStop="bs_2" walkFactor="0.75" costs="592.02"/>
+        <ride from="626283153#0" to="7281814#0" lines="taxi"/>
+    </person>
+    <person id="128" type="adult" depart="1920.00">
+        <personTrip from="-80798171#8" to="626284345#0" arrivalPos="61.80" busStop="bs_1" walkFactor="0.75" costs="382.90"/>
+        <ride from="626284345#0" to="654487789#0" lines="taxi"/>
+    </person>
+    <person id="129" type="adult" depart="1935.00">
+        <personTrip from="-125135491#4" to="626283153#0" arrivalPos="49.13" busStop="bs_2" walkFactor="0.75" costs="855.29"/>
+        <ride from="626283153#0" to="626283151#1" lines="taxi"/>
+    </person>
+    <person id="130" type="adult" depart="1950.00">
+        <personTrip from="7098383#4" to="475159103#0" arrivalPos="17.65" busStop="bs_6" walkFactor="0.75" costs="583.00"/>
+        <ride from="475159103#0" to="125135491#8" lines="taxi"/>
+    </person>
+    <person id="131" type="adult" depart="1965.00">
+        <personTrip from="7142812#1" to="626283153#0" arrivalPos="43.63" busStop="bs_2" walkFactor="0.75" costs="472.78"/>
+        <ride from="626283153#0" to="-7276267#3" lines="taxi"/>
+    </person>
+    <person id="132" type="adult" depart="1980.00">
+        <personTrip from="475159102#1" to="626283153#0" arrivalPos="20.54" busStop="bs_2" walkFactor="0.75" costs="50.81"/>
+        <ride from="626283153#0" to="-7276260#7" lines="taxi"/>
+    </person>
+    <person id="133" type="adult" depart="1995.00">
+        <personTrip from="626284345#0" to="474688711" arrivalPos="37.26" busStop="bs_7" walkFactor="0.75" costs="50.94"/>
+        <ride from="474688711" to="80565710#4" lines="taxi"/>
+    </person>
+    <person id="134" type="adult" depart="2010.00">
+        <personTrip from="-7288835#1" to="474688712#0" arrivalPos="70.47" busStop="bs_0" walkFactor="0.75" costs="256.23"/>
+        <ride from="474688712#0" to="7098383#2" lines="taxi"/>
+    </person>
+    <person id="135" type="adult" depart="2025.00">
+        <personTrip from="-7078477#1" to="474688711" arrivalPos="58.20" busStop="bs_7" walkFactor="0.75" costs="529.29"/>
+        <ride from="474688711" to="626112463#0" lines="taxi"/>
+    </person>
+    <person id="136" type="adult" depart="2040.00">
+        <personTrip from="-7142807#3" to="474688711" arrivalPos="56.30" busStop="bs_7" walkFactor="0.75" costs="631.01"/>
+        <ride from="474688711" to="7276260#0" lines="taxi"/>
+    </person>
+    <person id="137" type="adult" depart="2055.00">
+        <personTrip from="-7328604#7" to="474688711" arrivalPos="10.10" busStop="bs_7" walkFactor="0.75" costs="847.99"/>
+        <ride from="474688711" to="7123182#7" lines="taxi"/>
+    </person>
+    <person id="138" type="adult" depart="2070.00">
+        <personTrip from="-80565714#4" to="475159103#0" arrivalPos="35.08" busStop="bs_6" walkFactor="0.75" costs="673.16"/>
+        <ride from="475159103#0" to="7127213#0" lines="taxi"/>
+    </person>
+    <person id="139" type="adult" depart="2085.00">
+        <personTrip from="626800306#0" to="474688711" arrivalPos="62.95" busStop="bs_7" walkFactor="0.75" costs="672.89"/>
+        <ride from="474688711" to="7328604#14" lines="taxi"/>
+    </person>
+    <person id="140" type="adult" depart="2100.00">
+        <personTrip from="80798171#3" to="474688712#0" arrivalPos="84.99" busStop="bs_0" walkFactor="0.75" costs="392.34"/>
+        <ride from="474688712#0" to="626288020#0" lines="taxi"/>
+    </person>
+    <person id="141" type="adult" depart="2115.00">
+        <personTrip from="-7276324#3" to="475159102#1" arrivalPos="85.16" busStop="bs_3" walkFactor="0.75" costs="476.00"/>
+        <ride from="475159102#1" to="-7276260#4" lines="taxi"/>
+    </person>
+    <person id="142" type="adult" depart="2130.00">
+        <personTrip from="7247663#0" to="475159103#0" arrivalPos="22.50" busStop="bs_6" walkFactor="0.75" costs="719.49"/>
+        <ride from="475159103#0" to="-626799488#6" lines="taxi"/>
+    </person>
+    <person id="143" type="adult" depart="2145.00">
+        <personTrip from="7142807#4" to="626283153#0" arrivalPos="1.08" busStop="bs_2" walkFactor="0.75" costs="580.10"/>
+        <ride from="626283153#0" to="-80565710#6" lines="taxi"/>
+    </person>
+    <person id="144" type="adult" depart="2160.00">
+        <personTrip from="-7142812#4" to="474688712#0" arrivalPos="101.54" busStop="bs_0" walkFactor="0.75" costs="901.51"/>
+        <ride from="474688712#0" to="7142812#1" lines="taxi"/>
+    </person>
+    <person id="145" type="adult" depart="2175.00">
+        <personTrip from="80798172#4" to="475159103#0" arrivalPos="36.34" busStop="bs_6" walkFactor="0.75" costs="757.13"/>
+        <ride from="475159103#0" to="7276324#0" lines="taxi"/>
+    </person>
+    <person id="146" type="adult" depart="2190.00">
+        <personTrip from="-7281814#2" to="474688711" arrivalPos="47.40" busStop="bs_7" walkFactor="0.75" costs="1044.06"/>
+        <ride from="474688711" to="80565710#7" lines="taxi"/>
+    </person>
+    <person id="147" type="adult" depart="2205.00">
+        <personTrip from="-7123182#6" to="474688711" arrivalPos="88.70" busStop="bs_7" walkFactor="0.75" costs="448.81"/>
+        <ride from="474688711" to="7276260#5" lines="taxi"/>
+    </person>
+    <person id="148" type="adult" depart="2220.00">
+        <personTrip from="7098388#0" to="626283153#0" arrivalPos="12.41" busStop="bs_2" walkFactor="0.75" costs="374.71"/>
+        <ride from="626283153#0" to="7127213#0" lines="taxi"/>
+    </person>
+    <person id="149" type="adult" depart="2235.00">
+        <personTrip from="80565714#0" to="626283153#0" arrivalPos="25.62" busStop="bs_2" walkFactor="0.75" costs="1039.78"/>
+        <ride from="626283153#0" to="80798172#0" lines="taxi"/>
+    </person>
+    <person id="150" type="adult" depart="2250.00">
+        <personTrip from="7276317#0" to="474688712#0" arrivalPos="82.60" busStop="bs_0" walkFactor="0.75" costs="277.31"/>
+        <ride from="474688712#0" to="125135491#5" lines="taxi"/>
+    </person>
+    <person id="151" type="adult" depart="2265.00">
+        <personTrip from="-80565710#1" to="474688711" arrivalPos="46.18" busStop="bs_7" walkFactor="0.75" costs="399.22"/>
+        <ride from="474688711" to="-7123182#18" lines="taxi"/>
+    </person>
+    <person id="152" type="adult" depart="2280.00">
+        <personTrip from="80798171#3" to="-474689217" arrivalPos="10.15" busStop="bs_4" walkFactor="0.75" costs="728.87"/>
+        <ride from="-474689217" to="-7123182#13" lines="taxi"/>
+    </person>
+    <person id="153" type="adult" depart="2295.00">
+        <personTrip from="-80798172#1" to="626284345#0" arrivalPos="0.15" busStop="bs_1" walkFactor="0.75" costs="627.99"/>
+        <ride from="626284345#0" to="-7123182#13" lines="taxi"/>
+    </person>
+    <person id="154" type="adult" depart="2310.00">
+        <personTrip from="-7276317#7" to="474688712#0" arrivalPos="68.17" busStop="bs_0" walkFactor="0.75" costs="526.21"/>
+        <ride from="474688712#0" to="7237382#0" lines="taxi"/>
+    </person>
+    <person id="155" type="adult" depart="2325.00">
+        <personTrip from="-7237382#1" to="474688712#0" arrivalPos="95.09" busStop="bs_0" walkFactor="0.75" costs="512.10"/>
+        <ride from="474688712#0" to="125135491#8" lines="taxi"/>
+    </person>
+    <person id="156" type="adult" depart="2340.00">
+        <personTrip from="7078477#0" to="474688711" arrivalPos="1.15" busStop="bs_7" walkFactor="0.75" costs="753.88"/>
+        <ride from="474688711" to="626800306#0" lines="taxi"/>
+    </person>
+    <person id="157" type="adult" depart="2355.00">
+        <personTrip from="-7276260#2" to="626283153#0" arrivalPos="36.03" busStop="bs_2" walkFactor="0.75" costs="322.72"/>
+        <ride from="626283153#0" to="-7328604#10" lines="taxi"/>
+    </person>
+    <person id="158" type="adult" depart="2370.00">
+        <personTrip from="-7281814#2" to="626284345#0" arrivalPos="163.06" busStop="bs_1" walkFactor="0.75" costs="825.89"/>
+        <ride from="626284345#0" to="626799488#0" lines="taxi"/>
+    </person>
+    <person id="159" type="adult" depart="2385.00">
+        <personTrip from="7123182#14" to="475159103#0" arrivalPos="16.87" busStop="bs_6" walkFactor="0.75" costs="322.69"/>
+        <ride from="475159103#0" to="7276267#0" lines="taxi"/>
+    </person>
+    <person id="160" type="adult" depart="2400.00">
+        <personTrip from="80798172#2" to="626283153#0" arrivalPos="8.47" busStop="bs_2" walkFactor="0.75" costs="606.87"/>
+        <ride from="626283153#0" to="626283158" lines="taxi"/>
+    </person>
+    <person id="161" type="adult" depart="2415.00">
+        <personTrip from="7328604#14" to="475159102#1" arrivalPos="76.74" busStop="bs_3" walkFactor="0.75" costs="965.10"/>
+        <ride from="475159102#1" to="7276260#3" lines="taxi"/>
+    </person>
+    <person id="162" type="adult" depart="2430.00">
+        <personTrip from="-80565714#9" to="474688712#0" arrivalPos="84.81" busStop="bs_0" walkFactor="0.75" costs="374.23"/>
+        <ride from="474688712#0" to="-7328604#10" lines="taxi"/>
+    </person>
+    <person id="163" type="adult" depart="2445.00">
+        <personTrip from="7276324#0" to="475159103#0" arrivalPos="16.12" busStop="bs_6" walkFactor="0.75" costs="649.81"/>
+        <ride from="475159103#0" to="-7123182#13" lines="taxi"/>
+    </person>
+    <person id="164" type="adult" depart="2460.00">
+        <personTrip from="626283158" to="475159103#0" arrivalPos="40.83" busStop="bs_6" walkFactor="0.75" costs="689.54"/>
+        <ride from="475159103#0" to="80798171#9" lines="taxi"/>
+    </person>
+    <person id="165" type="adult" depart="2475.00">
+        <personTrip from="80798172#2" to="626283153#0" arrivalPos="36.10" busStop="bs_2" walkFactor="0.75" costs="623.35"/>
+        <ride from="626283153#0" to="-7123182#6" lines="taxi"/>
+    </person>
+    <person id="166" type="adult" depart="2490.00">
+        <personTrip from="626288020#0" to="626283153#0" arrivalPos="69.34" busStop="bs_2" walkFactor="0.75" costs="311.28"/>
+        <ride from="626283153#0" to="-7328604#7" lines="taxi"/>
+    </person>
+    <person id="167" type="adult" depart="2505.00">
+        <personTrip from="-80565714#12" to="474688712#0" arrivalPos="81.16" busStop="bs_0" walkFactor="0.75" costs="290.13"/>
+        <ride from="474688712#0" to="626283151#1" lines="taxi"/>
+    </person>
+    <person id="168" type="adult" depart="2520.00">
+        <personTrip from="474688707" to="626284345#0" arrivalPos="83.02" busStop="bs_1" walkFactor="0.75" costs="405.17"/>
+        <ride from="626284345#0" to="474688712#0" lines="taxi"/>
+    </person>
+    <person id="169" type="adult" depart="2535.00">
+        <personTrip from="-80798171#8" to="475159103#0" arrivalPos="34.56" busStop="bs_6" walkFactor="0.75" costs="452.85"/>
+        <ride from="475159103#0" to="7276260#7" lines="taxi"/>
+    </person>
+    <person id="170" type="adult" depart="2550.00">
+        <personTrip from="475159105#1" to="626283153#0" arrivalPos="24.65" busStop="bs_2" walkFactor="0.75" costs="430.74"/>
+        <ride from="626283153#0" to="7098383#4" lines="taxi"/>
+    </person>
+    <person id="171" type="adult" depart="2565.00">
+        <personTrip from="-7276260#2" to="626284345#0" arrivalPos="37.22" busStop="bs_1" walkFactor="0.75" costs="249.22"/>
+        <ride from="626284345#0" to="-125135491#1" lines="taxi"/>
+    </person>
+    <person id="172" type="adult" depart="2580.00">
+        <personTrip from="626800306#0" to="474688711" arrivalPos="15.06" busStop="bs_7" walkFactor="0.75" costs="687.68"/>
+        <ride from="474688711" to="80565462#8" lines="taxi"/>
+    </person>
+    <person id="173" type="adult" depart="2595.00">
+        <personTrip from="626112463#0" to="626283153#0" arrivalPos="33.07" busStop="bs_2" walkFactor="0.75" costs="564.57"/>
+        <ride from="626283153#0" to="973970332#0" lines="taxi"/>
+    </person>
+    <person id="174" type="adult" depart="2610.00">
+        <personTrip from="7288835#0" to="475159103#0" arrivalPos="13.25" busStop="bs_6" walkFactor="0.75" costs="312.13"/>
+        <ride from="475159103#0" to="-80798172#1" lines="taxi"/>
+    </person>
+    <person id="175" type="adult" depart="2625.00">
+        <personTrip from="973970332#0" to="474688712#0" arrivalPos="74.85" busStop="bs_0" walkFactor="0.75" costs="999.44"/>
+        <ride from="474688712#0" to="-7328604#5" lines="taxi"/>
+    </person>
+    <person id="176" type="adult" depart="2640.00">
+        <personTrip from="7078477#0" to="626284345#0" arrivalPos="79.74" busStop="bs_1" walkFactor="0.75" costs="752.73"/>
+        <ride from="626284345#0" to="626283153#0" lines="taxi"/>
+    </person>
+    <person id="177" type="adult" depart="2655.00">
+        <personTrip from="-125135491#1" to="626283153#0" arrivalPos="27.15" busStop="bs_2" walkFactor="0.75" costs="746.45"/>
+        <ride from="626283153#0" to="-80798171#12" lines="taxi"/>
+    </person>
+    <person id="178" type="adult" depart="2670.00">
+        <personTrip from="-80798171#9" to="-474689217" arrivalPos="24.00" busStop="bs_4" walkFactor="0.75" costs="820.50"/>
+        <ride from="-474689217" to="7328604#3" lines="taxi"/>
+    </person>
+    <person id="179" type="adult" depart="2685.00">
+        <personTrip from="7142812#5" to="475159103#0" arrivalPos="6.46" busStop="bs_6" walkFactor="0.75" costs="850.93"/>
+        <ride from="475159103#0" to="80565710#14" lines="taxi"/>
+    </person>
+    <person id="180" type="adult" depart="2700.00">
+        <personTrip from="475159105#1" to="475159103#0" arrivalPos="23.74" busStop="bs_6" walkFactor="0.75" costs="349.39"/>
+        <ride from="475159103#0" to="7237382#0" lines="taxi"/>
+    </person>
+    <person id="181" type="adult" depart="2715.00">
+        <personTrip from="7098383#4" to="626283153#0" arrivalPos="9.59" busStop="bs_2" walkFactor="0.75" costs="501.86"/>
+        <ride from="626283153#0" to="7090087#0" lines="taxi"/>
+    </person>
+    <person id="182" type="adult" depart="2730.00">
+        <personTrip from="7090087#0" to="474688711" arrivalPos="77.52" busStop="bs_7" walkFactor="0.75" costs="762.82"/>
+        <ride from="474688711" to="7090087#0" lines="taxi"/>
+    </person>
+    <person id="183" type="adult" depart="2745.00">
+        <personTrip from="7276260#7" to="475159103#0" arrivalPos="4.70" busStop="bs_6" walkFactor="0.75" costs="589.76"/>
+        <ride from="475159103#0" to="7328604#0" lines="taxi"/>
+    </person>
+    <person id="184" type="adult" depart="2760.00">
+        <personTrip from="7281810#0" to="626284345#0" arrivalPos="17.52" busStop="bs_1" walkFactor="0.75" costs="681.36"/>
+        <ride from="626284345#0" to="626800306#0" lines="taxi"/>
+    </person>
+    <person id="185" type="adult" depart="2775.00">
+        <personTrip from="-7281810#1" to="474688711" arrivalPos="22.19" busStop="bs_7" walkFactor="0.75" costs="684.86"/>
+        <ride from="474688711" to="7142807#0" lines="taxi"/>
+    </person>
+    <person id="186" type="adult" depart="2790.00">
+        <personTrip from="626283158" to="474688711" arrivalPos="22.36" busStop="bs_7" walkFactor="0.75" costs="740.34"/>
+        <ride from="474688711" to="-7142807#1" lines="taxi"/>
+    </person>
+    <person id="187" type="adult" depart="2805.00">
+        <personTrip from="475159104#0" to="474688712#0" arrivalPos="20.22" busStop="bs_0" walkFactor="0.75" costs="150.81"/>
+        <ride from="474688712#0" to="474689218#0" lines="taxi"/>
+    </person>
+    <person id="188" type="adult" depart="2820.00">
+        <personTrip from="626112459#0" to="626283153#0" arrivalPos="68.11" busStop="bs_2" walkFactor="0.75" costs="561.12"/>
+        <ride from="626283153#0" to="7198375#2" lines="taxi"/>
+    </person>
+    <person id="189" type="adult" depart="2835.00">
+        <personTrip from="-80565710#7" to="474688712#0" arrivalPos="33.21" busStop="bs_0" walkFactor="0.75" costs="688.71"/>
+        <ride from="474688712#0" to="7098388#0" lines="taxi"/>
+    </person>
+    <person id="190" type="adult" depart="2850.00">
+        <personTrip from="626093615#2" to="475159103#0" arrivalPos="10.26" busStop="bs_6" walkFactor="0.75" costs="163.73"/>
+        <ride from="475159103#0" to="80798171#0" lines="taxi"/>
+    </person>
+    <person id="191" type="adult" depart="2865.00">
+        <personTrip from="-80798171#8" to="626283217#0" arrivalPos="91.14" busStop="bs_5" walkFactor="0.75" costs="673.02"/>
+        <ride from="626283217#0" to="7123182#3" lines="taxi"/>
+    </person>
+    <person id="192" type="adult" depart="2880.00">
+        <personTrip from="-7276260#2" to="474688711" arrivalPos="45.74" busStop="bs_7" walkFactor="0.75" costs="229.91"/>
+        <ride from="474688711" to="-7276260#2" lines="taxi"/>
+    </person>
+    <person id="193" type="adult" depart="2895.00">
+        <personTrip from="-7281814#2" to="474688711" arrivalPos="18.71" busStop="bs_7" walkFactor="0.75" costs="1044.06"/>
+        <ride from="474688711" to="-7090087#1" lines="taxi"/>
+    </person>
+    <person id="194" type="adult" depart="2910.00">
+        <personTrip from="626283151#1" to="626283153#0" arrivalPos="17.66" busStop="bs_2" walkFactor="0.75" costs="192.91"/>
+        <ride from="626283153#0" to="-80565714#4" lines="taxi"/>
+    </person>
+    <person id="195" type="adult" depart="2925.00">
+        <personTrip from="7142812#5" to="475159103#0" arrivalPos="38.53" busStop="bs_6" walkFactor="0.75" costs="822.75"/>
+        <ride from="475159103#0" to="-7142812#4" lines="taxi"/>
+    </person>
+    <person id="196" type="adult" depart="2940.00">
+        <personTrip from="7142807#2" to="626284345#0" arrivalPos="39.57" busStop="bs_1" walkFactor="0.75" costs="711.81"/>
+        <ride from="626284345#0" to="7281810#0" lines="taxi"/>
+    </person>
+    <person id="197" type="adult" depart="2955.00">
+        <personTrip from="650708094#0" to="475159102#1" arrivalPos="82.75" busStop="bs_3" walkFactor="0.75" costs="585.52"/>
+        <ride from="475159102#1" to="-7276260#8" lines="taxi"/>
+    </person>
+    <person id="198" type="adult" depart="2970.00">
+        <personTrip from="-7142812#4" to="474688711" arrivalPos="55.83" busStop="bs_7" walkFactor="0.75" costs="863.70"/>
+        <ride from="474688711" to="7276260#8" lines="taxi"/>
+    </person>
+    <person id="199" type="adult" depart="2985.00">
+        <personTrip from="-80565710#10" to="474688711" arrivalPos="77.87" busStop="bs_7" walkFactor="0.75" costs="773.50"/>
+        <ride from="474688711" to="-7276260#7" lines="taxi"/>
+    </person>
+    <person id="200" type="adult" depart="3000.00">
+        <personTrip from="7142807#0" to="474688712#0" arrivalPos="41.75" busStop="bs_0" walkFactor="0.75" costs="852.40"/>
+        <ride from="474688712#0" to="7328604#0" lines="taxi"/>
+    </person>
+    <person id="201" type="adult" depart="3015.00">
+        <personTrip from="80565710#14" to="626284345#0" arrivalPos="15.17" busStop="bs_1" walkFactor="0.75" costs="870.54"/>
+        <ride from="626284345#0" to="7078477#0" lines="taxi"/>
+    </person>
+    <person id="202" type="adult" depart="3030.00">
+        <personTrip from="125135491#5" to="475159103#0" arrivalPos="23.33" busStop="bs_6" walkFactor="0.75" costs="915.28"/>
+        <ride from="475159103#0" to="7276260#0" lines="taxi"/>
+    </person>
+    <person id="203" type="adult" depart="3045.00">
+        <personTrip from="-7237382#1" to="474688712#0" arrivalPos="3.58" busStop="bs_0" walkFactor="0.75" costs="434.53"/>
+        <ride from="474688712#0" to="7078477#0" lines="taxi"/>
+    </person>
+    <person id="204" type="adult" depart="3060.00">
+        <personTrip from="80798172#2" to="474688711" arrivalPos="73.60" busStop="bs_7" walkFactor="0.75" costs="633.22"/>
+        <ride from="474688711" to="474688711" lines="taxi"/>
+    </person>
+    <person id="205" type="adult" depart="3075.00">
+        <personTrip from="7142812#1" to="626284345#0" arrivalPos="132.91" busStop="bs_1" walkFactor="0.75" costs="378.37"/>
+        <ride from="626284345#0" to="626800306#0" lines="taxi"/>
+    </person>
+    <person id="206" type="adult" depart="3090.00">
+        <personTrip from="626283151#1" to="474688712#0" arrivalPos="68.95" busStop="bs_0" walkFactor="0.75" costs="312.59"/>
+        <ride from="474688712#0" to="-7123182#6" lines="taxi"/>
+    </person>
+    <person id="207" type="adult" depart="3105.00">
+        <personTrip from="7142807#2" to="475159103#0" arrivalPos="4.89" busStop="bs_6" walkFactor="0.75" costs="783.06"/>
+        <ride from="475159103#0" to="-80565714#2" lines="taxi"/>
+    </person>
+    <person id="208" type="adult" depart="3120.00">
+        <personTrip from="-7276317#7" to="475159103#0" arrivalPos="18.67" busStop="bs_6" walkFactor="0.75" costs="568.08"/>
+        <ride from="475159103#0" to="7142807#4" lines="taxi"/>
+    </person>
+    <person id="209" type="adult" depart="3135.00">
+        <personTrip from="-7328604#5" to="626283153#0" arrivalPos="0.54" busStop="bs_2" walkFactor="0.75" costs="655.23"/>
+        <ride from="626283153#0" to="-7098388#2" lines="taxi"/>
+    </person>
+    <person id="210" type="adult" depart="3150.00">
+        <personTrip from="475159105#1" to="626284345#0" arrivalPos="105.54" busStop="bs_1" walkFactor="0.75" costs="417.31"/>
+        <ride from="626284345#0" to="-7098388#2" lines="taxi"/>
+    </person>
+    <person id="211" type="adult" depart="3165.00">
+        <personTrip from="-626799488#6" to="474688711" arrivalPos="8.35" busStop="bs_7" walkFactor="0.75" costs="885.21"/>
+        <ride from="474688711" to="626800306#0" lines="taxi"/>
+    </person>
+    <person id="212" type="adult" depart="3180.00">
+        <personTrip from="-7276260#4" to="475159103#0" arrivalPos="17.62" busStop="bs_6" walkFactor="0.75" costs="479.08"/>
+        <ride from="475159103#0" to="-474689218#8" lines="taxi"/>
+    </person>
+    <person id="213" type="adult" depart="3195.00">
+        <personTrip from="7281810#0" to="626283217#0" arrivalPos="84.94" busStop="bs_5" walkFactor="0.75" costs="890.13"/>
+        <ride from="626283217#0" to="80798171#9" lines="taxi"/>
+    </person>
+    <person id="214" type="adult" depart="3210.00">
+        <personTrip from="-80565710#18" to="474688712#0" arrivalPos="76.50" busStop="bs_0" walkFactor="0.75" costs="1013.73"/>
+        <ride from="474688712#0" to="7288838#0" lines="taxi"/>
+    </person>
+    <person id="215" type="adult" depart="3225.00">
+        <personTrip from="7123182#7" to="626283153#0" arrivalPos="44.78" busStop="bs_2" walkFactor="0.75" costs="469.12"/>
+        <ride from="626283153#0" to="-7098383#7" lines="taxi"/>
+    </person>
+    <person id="216" type="adult" depart="3240.00">
+        <personTrip from="514518466#1" to="474688712#0" arrivalPos="19.73" busStop="bs_0" walkFactor="0.75" costs="709.64"/>
+        <ride from="474688712#0" to="-80565714#9" lines="taxi"/>
+    </person>
+    <person id="217" type="adult" depart="3255.00">
+        <personTrip from="-7276260#8" to="626283153#0" arrivalPos="72.76" busStop="bs_2" walkFactor="0.75" costs="749.81"/>
+        <ride from="626283153#0" to="7281810#0" lines="taxi"/>
+    </person>
+    <person id="218" type="adult" depart="3270.00">
+        <personTrip from="626288024#1" to="475159103#0" arrivalPos="16.16" busStop="bs_6" walkFactor="0.75" costs="564.21"/>
+        <ride from="475159103#0" to="-7276260#4" lines="taxi"/>
+    </person>
+    <person id="219" type="adult" depart="3285.00">
+        <personTrip from="-80565710#10" to="474688711" arrivalPos="10.77" busStop="bs_7" walkFactor="0.75" costs="734.77"/>
+        <ride from="474688711" to="626800306#0" lines="taxi"/>
+    </person>
+    <person id="220" type="adult" depart="3300.00">
+        <personTrip from="973970332#0" to="475159103#0" arrivalPos="21.64" busStop="bs_6" walkFactor="0.75" costs="1043.21"/>
+        <ride from="475159103#0" to="-514518467#1" lines="taxi"/>
+    </person>
+    <person id="221" type="adult" depart="3315.00">
+        <personTrip from="7328604#3" to="626283153#0" arrivalPos="0.86" busStop="bs_2" walkFactor="0.75" costs="622.49"/>
+        <ride from="626283153#0" to="-80565462#3" lines="taxi"/>
+    </person>
+    <person id="222" type="adult" depart="3330.00">
+        <personTrip from="626288024#1" to="626283153#0" arrivalPos="42.90" busStop="bs_2" walkFactor="0.75" costs="496.86"/>
+        <ride from="626283153#0" to="80565714#0" lines="taxi"/>
+    </person>
+    <person id="223" type="adult" depart="3345.00">
+        <personTrip from="80565462#5" to="474688712#0" arrivalPos="23.84" busStop="bs_0" walkFactor="0.75" costs="819.96"/>
+        <ride from="474688712#0" to="7247663#0" lines="taxi"/>
+    </person>
+    <person id="224" type="adult" depart="3360.00">
+        <personTrip from="80565710#7" to="474688712#0" arrivalPos="56.49" busStop="bs_0" walkFactor="0.75" costs="643.66"/>
+        <ride from="474688712#0" to="-125135491#9" lines="taxi"/>
+    </person>
+    <person id="225" type="adult" depart="3375.00">
+        <personTrip from="7098388#0" to="626283153#0" arrivalPos="69.78" busStop="bs_2" walkFactor="0.75" costs="387.14"/>
+        <ride from="626283153#0" to="-626799488#6" lines="taxi"/>
+    </person>
+    <person id="226" type="adult" depart="3390.00">
+        <personTrip from="-7123182#19" to="474688711" arrivalPos="88.85" busStop="bs_7" walkFactor="0.75" costs="476.42"/>
+        <ride from="474688711" to="474689217" lines="taxi"/>
+    </person>
+    <person id="227" type="adult" depart="3405.00">
+        <personTrip from="80565710#4" to="474688712#0" arrivalPos="22.97" busStop="bs_0" walkFactor="0.75" costs="498.39"/>
+        <ride from="474688712#0" to="-474689218#8" lines="taxi"/>
+    </person>
+    <person id="228" type="adult" depart="3420.00">
+        <personTrip from="7328604#0" to="626284345#0" arrivalPos="164.22" busStop="bs_1" walkFactor="0.75" costs="417.31"/>
+        <ride from="626284345#0" to="-475159105#4" lines="taxi"/>
+    </person>
+    <person id="229" type="adult" depart="3435.00">
+        <personTrip from="-7102287#1" to="474688712#0" arrivalPos="23.91" busStop="bs_0" walkFactor="0.75" costs="501.70"/>
+        <ride from="474688712#0" to="-7098383#7" lines="taxi"/>
+    </person>
+    <person id="230" type="adult" depart="3450.00">
+        <personTrip from="7098383#0" to="475159103#0" arrivalPos="7.70" busStop="bs_6" walkFactor="0.75" costs="836.20"/>
+        <ride from="475159103#0" to="7198375#2" lines="taxi"/>
+    </person>
+    <person id="231" type="adult" depart="3465.00">
+        <personTrip from="7328604#0" to="626283153#0" arrivalPos="25.68" busStop="bs_2" walkFactor="0.75" costs="429.68"/>
+        <ride from="626283153#0" to="7098388#0" lines="taxi"/>
+    </person>
+    <person id="232" type="adult" depart="3480.00">
+        <personTrip from="7090087#0" to="475159103#0" arrivalPos="10.83" busStop="bs_6" walkFactor="0.75" costs="772.29"/>
+        <ride from="475159103#0" to="80798172#0" lines="taxi"/>
+    </person>
+    <person id="233" type="adult" depart="3495.00">
+        <personTrip from="-7276317#7" to="474688711" arrivalPos="43.89" busStop="bs_7" walkFactor="0.75" costs="546.31"/>
+        <ride from="474688711" to="-626799488#6" lines="taxi"/>
+    </person>
+    <person id="234" type="adult" depart="3510.00">
+        <personTrip from="626799488#0" to="626283217#0" arrivalPos="32.39" busStop="bs_5" walkFactor="0.75" costs="410.02"/>
+        <ride from="626283217#0" to="-80565710#6" lines="taxi"/>
+    </person>
+    <person id="235" type="adult" depart="3525.00">
+        <personTrip from="626284345#0" to="474688712#0" arrivalPos="78.77" busStop="bs_0" walkFactor="0.75" costs="80.79"/>
+        <ride from="474688712#0" to="626283151#0" lines="taxi"/>
+    </person>
+    <person id="236" type="adult" depart="3540.00">
+        <personTrip from="-80565710#6" to="626284345#0" arrivalPos="148.54" busStop="bs_1" walkFactor="0.75" costs="548.21"/>
+        <ride from="626284345#0" to="-80798172#3" lines="taxi"/>
+    </person>
+    <person id="237" type="adult" depart="3555.00">
+        <personTrip from="80565462#5" to="475159103#0" arrivalPos="12.69" busStop="bs_6" walkFactor="0.75" costs="875.71"/>
+        <ride from="475159103#0" to="125135481#0" lines="taxi"/>
+    </person>
+    <person id="238" type="adult" depart="3570.00">
+        <personTrip from="7142807#2" to="475159103#0" arrivalPos="38.40" busStop="bs_6" walkFactor="0.75" costs="755.02"/>
+        <ride from="475159103#0" to="7198375#2" lines="taxi"/>
+    </person>
+    <person id="239" type="adult" depart="3585.00">
+        <personTrip from="724282545" to="474688711" arrivalPos="35.89" busStop="bs_7" walkFactor="0.75" costs="213.48"/>
+        <ride from="474688711" to="-7276324#3" lines="taxi"/>
+    </person>
+</routes>

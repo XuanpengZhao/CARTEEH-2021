@@ -1,0 +1,8 @@
+<additional>
+<vType id="taxi" vClass="taxi" personCapacity="1">
+        <param key="device.taxi.dropOffDuration" value="10"/>
+        <param key="device.taxi.parking" value="false"/>
+        <param key="device.taxi.pickUpDuration" value="5"/>
+        <param key="has.taxi.device" value="true"/>
+</vType>
+</additional>
