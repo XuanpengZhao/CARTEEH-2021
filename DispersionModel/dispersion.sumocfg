@@ -1,0 +1,20 @@
+<configuration>
+<report>
+  <xml-validation value="never"/>
+</report>
+  <input>
+    <net-file value="ChicagoAve.net.xml"/>
+    <route-files value="peds_dist.rou.xml,taxis_Chicago.rou.xml,cars_Chicago.rou.xml"/>
+    <additional-files value="busStop6.add.xml,ChicagoAve.poly.xml"/>
+    <device.taxi.dispatch-algorithm value="traci"/>
+    <device.taxi.idle-algorithm value="randomCircling"/>
+ 
+
+  </input>
+  <time>
+    <begin value="0"/>
+    <end value="3610"/>
+    <step-length value="1.0" />
+  </time>
+  
+</configuration>
